@@ -30,15 +30,15 @@ console.log(markBMI, johnBMI)
 markHigherBMI = markBMI > johnBMI
 console.log(markHigherBMI)
 
-const massOfMark = 95;
-const heightOfMark = 1.88;
-const massOfJohn = 85;
-const heightOfJohn = 1.76;
+const massOfMark1 = 95;
+const heightOfMark1 = 1.88;
+const massOfJohn1 = 85;
+const heightOfJohn1 = 1.76;
 
-markBMI = massOfMark / (heightOfMark **2)
-johnBMI = massOfJohn / (heightOfJohn **2)
-console.log(markBMI, johnBMI)
+markBMI1 = massOfMark1 / (heightOfMark1 **2)
+johnBMI1 = massOfJohn1 / (heightOfJohn1 **2)
+console.log(markBMI1, johnBMI1)
 
-markHigherBMI = markBMI > johnBMI
+markHigherBMI = markBMI1 > johnBMI1;
 console.log(markHigherBMI)
 
