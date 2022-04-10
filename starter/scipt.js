@@ -198,7 +198,7 @@ Your tasks:
 Hint: Use an if/else statement �
 
 GOOD LUCK �
-*/
+
 
 const massOfMark = 78;
 const heightOfMark = 1.69;
@@ -230,3 +230,234 @@ if (markBMI1 > johnBMI1) {
 } else {
   console.log(`"John's BMI (${johnBMI1}) is higher than Mark's (${markBMI1})!"`)
 }
+
+
+// type conversion 
+const inputYear = '1991';
+console.log(inputYear + 18)
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+console.log(String(23), 23);
+console.log(String(23) + 23)
+
+// type coercion
+console.log('I am ' + 23 + ' years old');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+console.log('23' / '2');
+
+let n = '1' + 1; // '11'
+n = n - 1; 
+console.log(n);
+
+
+// 5 falsy values; 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({})); // {} is an empty object
+console.log(Boolean(''));
+
+const money = 0;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log('You should get a job!')
+}
+
+let height;
+if (height) {
+  console.log('YAY! Height is defined.')
+} else {
+  console.log('Height is UNDEFINED!')
+}
+
+
+const age = '18';
+if (age === 18) console.log('You just became an adult :D (strict)');
+
+if (age == 18) console.log('You just became an adult :D (loose)');
+
+const favourite = prompt("What's your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+
+if (favourite == 23) {// '23' == 23
+  console.log('cool! 23 is an amazing number!')
+}
+
+
+const fav = Number(prompt("What's your favourite number?"));
+console.log(fav);
+console.log(typeof fav);
+
+if (fav === 23) {// '23' === 23
+  console.log('cool! 23 is an amazing number!')
+} else if (fav === 7) {
+  console.log('7 is also a cool number')
+} else if (fav === 9) {
+  console.log('9 is also a cool number')
+} else {
+  console.log('Number is not 23 or 7 or 9')
+}
+
+if (favourite !== 23) console.log('Why not 23?');
+
+
+
+const hasDriversLicense = true; // A
+const hasGoodVision = false; // B
+// Note that the AND operator in javascript is &&
+// Note that the OR operator in javascript is ||
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense)
+
+const shouldDrive = hasDriversLicense && hasGoodVision;
+
+if (shouldDrive) {
+  console.log('Sarah is able to drive!')
+} else {
+  console.log('Someone else should drive...')
+}
+
+const isTired = true; // C
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  console.log('Sarah is able to drive')
+} else  {
+  console.log('Someone else should drive...')
+}
+
+
+dolphinsScores = (96, 108, 89)
+koalasScores = (88, 91, 110)
+
+dolphinsSum = (96 + 108 + 89)
+koalasSum = (88 + 91 + 110)
+
+const dolphinsAverage = dolphinsSum / 3
+const koalasAverage = koalasSum / 3
+console.log(dolphinsAverage)
+
+
+if (dolphinsAverage === koalasAverage) {
+  console.log("The Game was a 'DRAW'")
+} else if (dolphinsAverage > koalasAverage) {
+  console.log("DOLPHINS WINS")
+} else {
+  console.log(`KOALAS WINS`)
+}
+
+//  solution to Bonus 1
+
+dolphinsSum1 = (97 + 112 + 101)
+koalasSum1 = (109 + 95 + 123)
+
+const dolphinsAverage1 = dolphinsSum1 / 3
+const koalasAverage1 = koalasSum1 / 3
+console.log(dolphinsAverage1)
+
+
+if (dolphinsAverage1 === koalasAverage1) {
+  console.log("'DRAW'")
+} else if ( koalasAverage1 > dolphinsAverage1 && koalasAverage1 > 100) {
+  console.log(`KOALAS WINS`)
+} else if (dolphinsAverage1 > koalasAverage1 && dolphinsAverage1 > 100) {
+  console.log("DOLPHINS WINS")
+}
+
+//  solution to Bonus 2
+
+dolphinsSum2 = (97 + 112 + 101)
+koalasSum2 = (109 + 95 + 106)
+
+const dolphinsAverage2 = dolphinsSum2 / 3
+const koalasAverage2 = koalasSum2 / 3
+console.log(dolphinsAverage2)
+
+
+if (dolphinsAverage2 === koalasAverage2 && dolphinsAverage2 >= 100 && koalasAverage2 >= 100) {
+  console.log("'DRAW'")
+} else if ( koalasAverage1 > dolphinsAverage1 && koalasAverage1 > 100) {
+  console.log(`KOALAS WINS`)
+} else if (dolphinsAverage1 > koalasAverage1 && dolphinsAverage1 > 100) {
+  console.log("DOLPHINS WINS")
+}
+
+
+const day = 'monday';
+
+switch(day) {
+  case 'monday': // day === 'monday'
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+    break;
+  case 'tuesday':
+    console.log('Prepare theory videos');
+    break;
+  case 'wednesday':
+  case 'thursday':
+    console.log('Write code examples');
+    break;
+  case 'friday':
+    console.log('Record videos');
+    break;
+  case 'saturday':
+  case 'sunday':
+    console.log('Enjoy the weekend :D');
+    break;
+  default:
+    console.log('Not a valid day!');
+}
+
+// Convert the switch statements codes to 
+
+
+if (day === 'monday') {
+  console.log('Plan course structure');
+  console.log('Go to coding meetup');
+} else if (day === 'tuesday') {
+  console.log('Prepare theory videos');
+} else if (day === 'wednesday' && day === 'thursday') {
+  console.log('Write code examples');
+} else if (day === 'friday') {
+  console.log('Record videos');
+} else if (day === 'saturday' && day === 'sunday') {
+  console.log('Enjoy the weekend :D');
+} else {
+  console.log('Not a valid day!');
+}
+
+console.log(`🚒car🚚`)
+
+
+const age = 15
+age >= 18  ? console.log(`I like to drink wine`) : console.log(`I like to drink water`);
+
+const drink = age >= 18 ? 'wine 🍷': 'water 💦'
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+  drink2 = 'wine 🍷';
+} else {
+  drink2 = 'water 💦';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷': 'water 💦'}`)
+*/
+
+const bill = 40;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip} `)
+
